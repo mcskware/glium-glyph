@@ -28,6 +28,7 @@ use glium::draw_parameters::DrawParameters;
 /// ```
 */
 
+#[allow(missing_debug_implementations)]
 pub struct GlyphBrushBuilder<'a, F: Font, H = DefaultSectionHasher> {
     inner: glyph_brush::GlyphBrushBuilder<F, H>,
     params: DrawParameters<'a>,

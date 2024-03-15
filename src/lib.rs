@@ -173,6 +173,7 @@ fn to_vertex(
 /// the previous draw call.
 */
 
+#[allow(missing_debug_implementations)]
 pub struct GlyphBrush<'a, F: Font, H: BuildHasher = DefaultSectionHasher> {
     glyph_brush: glyph_brush::GlyphBrush<GlyphVertex, Extra, F, H>,
     params: glium::DrawParameters<'a>,
